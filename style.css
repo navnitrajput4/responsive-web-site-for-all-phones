@@ -1,0 +1,241 @@
+* {
+    font-family: "Lora", serif;
+    ;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 85%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+/* logo navbar */
+
+#logo {
+    margin: 2px 3px;
+}
+
+#logo img {
+    height: 50px;
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 21px;
+    padding: 2px;
+}
+
+
+/* list navbar */
+
+#navbar ul {
+    display: flex;
+}
+
+.item {
+    list-style: none;
+    margin: 10px;
+}
+
+.item a {
+    display: block;
+    color: white;
+    padding: 4px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: aqua;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 250px;
+    height: 650px;
+}
+
+#home::before {
+    content: "";
+    background: url(./car-6603726_1280\ -\ Copy.jpg) no-repeat center center/cover;
+    height: 733px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+#home h1 {
+    color: #9E9E9E;
+    text-align: center;
+}
+
+#home p {
+    text-align: center;
+    color: 362824;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+.btn:hover {
+    color: rgb(233, 189, 136);
+    background-color: azure;
+    cursor: pointer;
+}
+
+
+/* serives section */
+
+#services {
+    margin: 30px;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+#services .box {
+    border: 5px solid #a4b3d0bf;
+    margin: 5px 25px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #89917633;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 170px;
+    width: 270px;
+}
+
+#services .box h2 {
+    text-align: center;
+}
+
+
+/* cilent section */
+
+#clientsec {
+    height: 350px;
+    position: relative;
+}
+
+#client {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#clientsec::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(./pexels-fauxels-3183197.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#client img {
+    height: 100px;
+}
+
+.citem {
+    padding: 2px 7px;
+    margin: 40px 25px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./pexels-pixabay-326576.jpg) no-repeat center center/cover;
+}
+
+#contactbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 33px;
+}
+
+#contactbox input,
+#contactbox textarea {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5PX;
+}
+
+#contactbox form {
+    width: 40%;
+}
+
+#contactbox label {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+}
+
+
+/* utility class */
+
+.primaryh {
+    font-size: 3.5rem;
+    padding: 10px;
+}
+
+.secondaryh {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.btn {
+    text-align: center;
+    color: white;
+    background-color: rgb(173, 146, 146);
+    border: 2px solid;
+    padding: 5px 18px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+.center {
+    text-align: center;
+}
